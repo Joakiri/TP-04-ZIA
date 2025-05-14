@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP-04-ZIA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f048846fdd138611200f8e77f0890991c3a06fa7")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP-04-ZIA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP-04-ZIA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -15,6 +15,14 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Partida.inicializarPartida();
+        ViewBag.palabra = Partida.palabra;
+        return View();
+    }
+    public IActionResult actualizacion (){
+        Partida.actualizarIntento();
+        ViewBag.intentos = Partida.intentos;
+        ViewBag.intentosLetra = Partida.intentosLetra;
         return View();
     }
 }
