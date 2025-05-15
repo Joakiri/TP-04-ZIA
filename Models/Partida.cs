@@ -39,6 +39,30 @@ static public List<char> intentosLetra {get; private set;}
     static public void actualizarIntento(char intentoLetra){
         intentos++;
         intentosLetra.Add(intentoLetra);
+        if(palabra.Contains(intentoLetra)){
+            mostrarLetra();
+        }
+        else{
+            marcarLetraIncorrecta();
+        }
     } 
+    static public void mostrarLetra(){
 
+    }
+    static public void marcarLetraIncorrecta(){
+
+    }
+    static public bool arriesgoPalabra(string intentoPalabra){
+        bool acertaste = false;
+        if(intentoPalabra == palabra){
+            acertaste = true;
+        }
+        return acertaste;
+    }
+    static public void ganaste(){
+
+    }
+    static public void perdiste(){
+
+    }
 }

@@ -19,10 +19,19 @@ public class HomeController : Controller
         ViewBag.palabra = Partida.palabra;
         return View();
     }
-    public IActionResult actualizacion (){
-        Partida.actualizarIntento();
+    public IActionResult actualizacionChar (char letraaa){
+        Partida.actualizarIntento(letraaa);
         ViewBag.intentos = Partida.intentos;
         ViewBag.intentosLetra = Partida.intentosLetra;
         return View();
+    }
+    public IActionResult actualizacionPalabra (string intentoPalabra){
+        bool acertaste = Partida.arriesgoPalabra(intentoPalabra);
+        if(acertaste){
+            return View("Ganaste");
+        }
+        else{
+            return View("Perdiste");
+        }
     }
 }
