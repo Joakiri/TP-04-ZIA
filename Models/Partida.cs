@@ -40,13 +40,17 @@ static public List<char> intentosLetra {get; private set;}
         intentos++;
         intentosLetra.Add(intentoLetra);
         if(palabra.Contains(intentoLetra)){
-            mostrarLetra();
+            mostrarLetraEnpalabra();
         }
         else{
             marcarLetraIncorrecta();
         }
+        mostrarLetraEnIntentos();
     } 
-    static public void mostrarLetra(){
+    static public void mostrarLetraEnIntentos(){
+    
+    }
+    static public void mostrarLetraEnpalabra(){
 
     }
     static public void marcarLetraIncorrecta(){

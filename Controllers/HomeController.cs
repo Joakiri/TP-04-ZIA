@@ -20,9 +20,11 @@ public class HomeController : Controller
         return View();
     }
     public IActionResult actualizacionChar (char letraaa){
+        if(!Partida.intentosLetra.Contains(letraaa)){
         Partida.actualizarIntento(letraaa);
         ViewBag.intentos = Partida.intentos;
         ViewBag.intentosLetra = Partida.intentosLetra;
+        }
         return View();
     }
     public IActionResult actualizacionPalabra (string intentoPalabra){
@@ -33,5 +35,9 @@ public class HomeController : Controller
         else{
             return View("Perdiste");
         }
+    }
+
+    public IActionResult mostrarLetraOGuion(){
+        int cantChars = Partida.palabra.Count();
     }
 }
