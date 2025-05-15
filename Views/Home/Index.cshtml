@@ -1,8 +1,13 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
+<header>
+    <a href='@Url.Action("Index", "Home")' >INICIO</a>
+</header>
 
 <div>
-    <h1>Index</h1>
-    <p>Bienvenidos al sitio web de NombreProyecto</p>
+    <p>Bienvenidos al sitio web para jugar Ahorcado</p>
+    <h2>
+    Para jugar presione <a href='@Url.Action("mostrarLetraO, "Home")' >aquí</a>
+    </h2>
 </div>
