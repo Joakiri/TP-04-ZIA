@@ -21,19 +21,24 @@ public class HomeController : Controller
 
         Partida.inicializarPartida();
         ViewBag.palabra = Partida.palabra;
+        ViewBag.intentosLetra = Partida.intentosLetra;
+        ViewBag.intentos = Partida.intentos;
+        ViewBag.palabraAMostrar = "--------";
         return View("juego");
     }
-    public IActionResult actualizacionChar (char letraaa){
-        if(!Partida.intentosLetra.Contains(letraaa)){
-        string ppalabra = Partida.actualizarIntentoLetra(letraaa);
+    [HttpPost]
+    public IActionResult actualizacionChar (char letra){
+        if(!Partida.intentosLetra.Contains(letra)){
+        string ppalabra = Partida.actualizarIntentoLetra(letra);
         ViewBag.intentos = Partida.intentos;
         ViewBag.intentosLetra = Partida.intentosLetra;
         ViewBag.palabraAMostrar = ppalabra;
         }
-        return View();
+        return View("juego");
     }
-    public IActionResult actualizacionPalabra (string intentoPalabra){
-        bool acertaste = Partida.arriesgoPalabra(intentoPalabra);
+    [HttpPost]
+    public IActionResult actualizacionPalabra (string palabra){
+        bool acertaste = Partida.arriesgoPalabra(palabra);
         if(acertaste){
             return View("Ganaste");
         }

@@ -6,21 +6,24 @@
     <a href='@Url.Action("Index", "Home")' >INICIO</a>
 </header>
 
-<h5>
-    <h3>LAS LETRAS QUE YA ARRIESGASTE SON:</h3>
-    <h4>INTENTOS:</h4>
-</h5>
+    <h2>@ViewBag.palabraAMostrar</h2>
+    <h3>LAS LETRAS QUE YA ARRIESGASTE SON: 
+    @foreach(char letra in ViewBag.intentosLetra){
+        @letra
+    }
+    </h3>
+    <h4>INTENTOS: @ViewBag.intentos</h4>
 
 <section>
-        <form action = index.html>
-            Ingrese una letra: <input type="text" name="letra" placeholder="Ingrese letra a arriesgar"/><br/>
+        <form action = '@Url.Action("actualizacionChar", "Home")' method = "POST">
+            Ingrese una letra: <input type="char" name="letra" placeholder="Ingrese letra a arriesgar"/><br/>
            <p><input type="submit" value="Mandar"></p>
         </form>
 </section>
         
 <div>
-        <form action = index.html>
-            Ingrese una palabra: <input type="text" name="palabra" placeholder="Ingrese palabra a arriesgar"/><br/>
+        <form action = '@Url.Action("actualizacionPalabra")' method = "POST">
+            Ingrese una palabra: <input type="char" name="palabra" placeholder="Ingrese palabra a arriesgar"/><br/>
            <p><input type="submit" value="Mandar"></p>
         </form>
 </div>
