@@ -27,3 +27,14 @@ C:\Users\48860305\Desktop\TP44\TP-04-ZIA\obj\Debug\net8.0\refint\TP-04-ZIA.dll
 C:\Users\48860305\Desktop\TP44\TP-04-ZIA\obj\Debug\net8.0\TP-04-ZIA.pdb
 C:\Users\48860305\Desktop\TP44\TP-04-ZIA\obj\Debug\net8.0\TP-04-ZIA.genruntimeconfig.cache
 C:\Users\48860305\Desktop\TP44\TP-04-ZIA\obj\Debug\net8.0\ref\TP-04-ZIA.dll
+C:\Users\48860305\Desktop\tp444\TP-04-ZIA\obj\Debug\net8.0\TP-04-ZIA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\48860305\Desktop\tp444\TP-04-ZIA\obj\Debug\net8.0\TP-04-ZIA.AssemblyInfoInputs.cache
+C:\Users\48860305\Desktop\tp444\TP-04-ZIA\obj\Debug\net8.0\TP-04-ZIA.AssemblyInfo.cs
+C:\Users\48860305\Desktop\tp444\TP-04-ZIA\obj\Debug\net8.0\TP-04-ZIA.csproj.CoreCompileInputs.cache
+C:\Users\48860305\Desktop\tp444\TP-04-ZIA\obj\Debug\net8.0\TP-04-ZIA.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\48860305\Desktop\tp444\TP-04-ZIA\obj\Debug\net8.0\TP-04-ZIA.RazorAssemblyInfo.cache
+C:\Users\48860305\Desktop\tp444\TP-04-ZIA\obj\Debug\net8.0\TP-04-ZIA.RazorAssemblyInfo.cs
+C:\Users\48860305\Desktop\tp444\TP-04-ZIA\obj\Debug\net8.0\TP-04-ZIA.sourcelink.json
+C:\Users\48860305\Desktop\tp444\TP-04-ZIA\obj\Debug\net8.0\TP-04-ZIA.dll
+C:\Users\48860305\Desktop\tp444\TP-04-ZIA\obj\Debug\net8.0\refint\TP-04-ZIA.dll
+C:\Users\48860305\Desktop\tp444\TP-04-ZIA\obj\Debug\net8.0\TP-04-ZIA.pdb
