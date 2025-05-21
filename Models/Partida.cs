@@ -4,10 +4,16 @@ static class Partida
 static public int intentos {get; private set;}
 static public string palabra {get; private set;}
 static public List<char> intentosLetra {get; private set;}
+static public List<bool> LetraOGuion {get; private set;}
 
     static public void inicializarPartida (){
         intentos = 0;
         intentosLetra = new List<char> ();
+        LetraOGuion = new List<bool>();
+        while(LetraOGuion.Count < Partida.palabra.Count())
+        {
+            LetraOGuion.Add(false);
+        }
         palabra = "";
         Random randomNum = new Random();
         int randomNumber = randomNum.Next();
@@ -36,37 +42,28 @@ static public List<char> intentosLetra {get; private set;}
                 }
             }
     }
-    static public void actualizarIntento(char intentoLetra){
+    static public string actualizarIntentoLetra(char intentoLetra){
+        string palabraMostrar = "";
         intentos++;
         intentosLetra.Add(intentoLetra);
-        if(palabra.Contains(intentoLetra)){
-            mostrarLetraEnpalabra();
+        foreach(char letra in palabra){
+            if(intentosLetra.Contains(letra)){
+                //mostrar esa letra
+                palabraMostrar += letra;
+            }
+            else{
+                //mostrar guion
+                palabraMostrar += "-";
+            }
         }
-        else{
-            marcarLetraIncorrecta();
-        }
-        mostrarLetraEnIntentos();
+        return palabraMostrar;
     } 
-    static public void mostrarLetraEnIntentos(){
-    
-    }
-    static public void mostrarLetraEnpalabra(){
-
-    }
-    static public void marcarLetraIncorrecta(){
-
-    }
     static public bool arriesgoPalabra(string intentoPalabra){
         bool acertaste = false;
+        intentos++;
         if(intentoPalabra == palabra){
             acertaste = true;
         }
         return acertaste;
-    }
-    static public void ganaste(){
-
-    }
-    static public void perdiste(){
-
     }
 }
