@@ -15,9 +15,13 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        return View();
+    }
+    public IActionResult iniciarPartida(){
+
         Partida.inicializarPartida();
         ViewBag.palabra = Partida.palabra;
-        return View();
+        return View("juego");
     }
     public IActionResult actualizacionChar (char letraaa){
         if(!Partida.intentosLetra.Contains(letraaa)){

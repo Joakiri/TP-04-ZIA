@@ -4,16 +4,10 @@ static class Partida
 static public int intentos {get; private set;}
 static public string palabra {get; private set;}
 static public List<char> intentosLetra {get; private set;}
-static public List<bool> LetraOGuion {get; private set;}
 
     static public void inicializarPartida (){
         intentos = 0;
         intentosLetra = new List<char> ();
-        LetraOGuion = new List<bool>();
-        while(LetraOGuion.Count < Partida.palabra.Count())
-        {
-            LetraOGuion.Add(false);
-        }
         palabra = "";
         Random randomNum = new Random();
         int randomNumber = randomNum.Next();
