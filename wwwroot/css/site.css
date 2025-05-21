@@ -19,17 +19,13 @@ header{
   background-color: rgb(221, 255, 253);
 }
 
-h1{
-  font-size: 20px;
-  float: left;
+
+
+p{
+  font-size: 20px; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: beige;
 }
-
-div p{
-  font-size: 14px; 
-  float: left;
-}
-
-
 
 
 footer {
