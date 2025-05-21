@@ -8,22 +8,24 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 
-<body>
-    <header>
+ <header>
         TP04-ZIA
-    </header>
+</header>
+
+<body>
 
     <main role="main">
         @RenderBody()
     </main>
 
-    <footer>
-        &copy; @DateTime.Now.Year - AHORCADO
-    </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
+<footer>
+        &copy; @DateTime.Now.Year - AHORCADO
+</footer>
 
 </html>

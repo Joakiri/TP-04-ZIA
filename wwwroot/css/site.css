@@ -16,7 +16,7 @@ body {
 
 header{
   font-size: 20px;
-
+  background-color: rgb(221, 255, 253);
 }
 
 h1{
@@ -26,7 +26,7 @@ h1{
 
 div p{
   font-size: 14px; 
-  font-palette: red;
+  float: left;
 }
 
 
@@ -35,6 +35,6 @@ div p{
 footer {
   margin-top: 10px;
   padding: 10px;
-  background-color: #f8f9fa;
+  background-color: #0080ff;
   border-top: 1px solid #e9ecef;
 }
