@@ -4,23 +4,23 @@
 
 
     <h2>@ViewBag.palabraAMostrar</h2>
-    <h3>LAS LETRAS QUE YA ARRIESGASTE SON: 
+    <h3>Las letras que ya arriesgaste: 
     @foreach(char letra in ViewBag.intentosLetra){
         @letra
     }
     </h3>
-    <h4>INTENTOS: @ViewBag.intentos</h4>
+    <h4>Intentos: @ViewBag.intentos</h4>
 
 <section>
         <form action = '@Url.Action("actualizacionChar", "Home")' method = "POST">
             Ingrese una letra: <input type="char" name="letra" placeholder="Ingrese letra a arriesgar"/><br/>
-           <p><input type="submit" value="Mandar"></p>
+           <input type="submit" value="Mandar">
         </form>
 </section>
         
 <div>
         <form action = '@Url.Action("actualizacionPalabra")' method = "POST">
             Ingrese una palabra: <input type="char" name="palabra" placeholder="Ingrese palabra a arriesgar"/><br/>
-           <p><input type="submit" value="Mandar"></p>
+           <input type="submit" value="Mandar">
         </form>
 </div>
