@@ -31,11 +31,13 @@ public class HomeController : Controller
         string ppalabra = "";
         if(!Partida.intentosLetra.Contains(letra)){
         ppalabra = Partida.actualizarIntentoLetra(letra);
+       
+        if(ppalabra == Partida.palabra){return View("Ganaste");}
+        }
+
         ViewBag.intentos = Partida.intentos;
         ViewBag.intentosLetra = Partida.intentosLetra;
         ViewBag.palabraAMostrar = ppalabra;
-        if(ppalabra == Partida.palabra){return View("Ganaste");}
-        }
             return View("juego");
         
         
