@@ -27,13 +27,6 @@ h1{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-p{
-  font-size: 20px; 
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: rgb(59, 67, 133);
-}
-
-
 footer {
   margin-top: 10px;
   padding: 15px;
@@ -65,5 +58,3 @@ h4{
   font-size: 100%;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
-

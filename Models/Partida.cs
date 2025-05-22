@@ -38,8 +38,10 @@ static public List<char> intentosLetra {get; private set;}
     }
     static public string actualizarIntentoLetra(char intentoLetra){
         string palabraMostrar = "";
+        if(!intentosLetra.Contains(intentoLetra)){
         intentos++;
         intentosLetra.Add(intentoLetra);
+        }
         foreach(char letra in palabra){
             if(intentosLetra.Contains(letra)){
                 //mostrar esa letra

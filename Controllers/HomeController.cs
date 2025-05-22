@@ -28,19 +28,17 @@ public class HomeController : Controller
     }
     [HttpPost]
     public IActionResult actualizacionChar (char letra){
-        string ppalabra = "";
-        if(!Partida.intentosLetra.Contains(letra)){
-        ppalabra = Partida.actualizarIntentoLetra(letra);
-       
+        string ppalabra = establecerPalabra(letra);
         if(ppalabra == Partida.palabra){return View("Ganaste");}
-        }
-
         ViewBag.intentos = Partida.intentos;
         ViewBag.intentosLetra = Partida.intentosLetra;
         ViewBag.palabraAMostrar = ppalabra;
-            return View("juego");
-        
-        
+        return View("juego");
+    }
+    public string establecerPalabra(char letra){
+        string ppalabra = "";
+        ppalabra = Partida.actualizarIntentoLetra(letra);
+        return ppalabra;
     }
     [HttpPost]
     public IActionResult actualizacionPalabra (string palabra){
