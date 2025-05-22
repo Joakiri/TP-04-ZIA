@@ -34,13 +34,10 @@ public class HomeController : Controller
         ViewBag.intentos = Partida.intentos;
         ViewBag.intentosLetra = Partida.intentosLetra;
         ViewBag.palabraAMostrar = ppalabra;
+        if(ppalabra == Partida.palabra){return View("Ganaste");}
         }
-        if(ppalabra == Partida.palabra){
-            return View("Ganaste");
-        }
-        else{
             return View("juego");
-        }
+        
         
     }
     [HttpPost]
