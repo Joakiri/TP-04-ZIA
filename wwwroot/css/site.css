@@ -24,13 +24,16 @@ header{
 p{
   font-size: 20px; 
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: beige;
+  background-color: rgb(131, 131, 55);
 }
 
 
 footer {
   margin-top: 10px;
   padding: 10px;
-  background-color: #0080ff;
+  background-color: #c3e1ff;
   border-top: 1px solid #e9ecef;
+}
+a{
+ text-decoration: none; 
 }

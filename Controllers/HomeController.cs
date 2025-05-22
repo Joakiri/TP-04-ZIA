@@ -28,13 +28,20 @@ public class HomeController : Controller
     }
     [HttpPost]
     public IActionResult actualizacionChar (char letra){
+        string ppalabra = "";
         if(!Partida.intentosLetra.Contains(letra)){
-        string ppalabra = Partida.actualizarIntentoLetra(letra);
+        ppalabra = Partida.actualizarIntentoLetra(letra);
         ViewBag.intentos = Partida.intentos;
         ViewBag.intentosLetra = Partida.intentosLetra;
         ViewBag.palabraAMostrar = ppalabra;
         }
-        return View("juego");
+        if(ppalabra == Partida.palabra){
+            return View("Ganaste");
+        }
+        else{
+            return View("juego");
+        }
+        
     }
     [HttpPost]
     public IActionResult actualizacionPalabra (string palabra){
